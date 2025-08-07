@@ -1,0 +1,32 @@
+// Questão 01
+const nota1 = 2;
+const nota2 = 3;
+const nota3 = 5;
+
+let media = (nota1 + nota2 + nota3) / 3;
+console.log(`Esta é a média: ${media}`);
+
+
+//Questão 02
+
+function classificarTriangulo(x, y, z){
+    if(x + y > z || x + z > y || y + z > x){
+        if(x == y && y == z){
+            console.log("O triângulo é Equilátero!");
+        }
+        else if(x == y && y != z || x == z && x != y || z == y && y != x){
+            console.log("O triângulo é Isóceles!");
+        }
+        else{
+            console.log("O triângulo é Escaleno!");
+        }
+    }
+    else{
+        console.log("Não é possível criar um triângulo com estas medidas!");
+    }
+}
+
+classificarTriangulo(3, 5, 18);
+
+// Questão 03
+
