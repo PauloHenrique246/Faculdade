@@ -30,3 +30,23 @@ classificarTriangulo(3, 5, 18);
 
 // Questão 03
 
+let number = 10;
+
+while(number >= 0){
+    console.log(`Contagem: ${number}!`);
+    number--;
+    if(number == 0){
+        console.log("Lançar!");
+        break;
+    }
+}
+
+// Questão 04
+const valor = 32;
+
+function converterCelsiusParaFahrenheit(C){
+    let conversor = C * 9/5 + 32;
+    return console.log("Valor convertido: " + conversor);
+}
+
+converterCelsiusParaFahrenheit(valor);
