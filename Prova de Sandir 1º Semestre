@@ -50,3 +50,36 @@ function converterCelsiusParaFahrenheit(C){
 }
 
 converterCelsiusParaFahrenheit(valor);
+
+// Questão 05
+const array = [1, 2, 3, 4, 5, 6, 7, 8]
+const number = 2;
+function filtrarMaioresQue(arr, n){
+    let arr2 = [];
+    for(let i = 0; i < arr.length - 1; i++){
+        if(arr[i] > n){
+            arr2.push(arr[i]);
+        }
+    }
+    console.log(arr2);
+};
+
+filtrarMaioresQue(array, number);
+
+// Questão 06 incompleta
+const senha = "GarotoDePrograma2_0"
+function validarSenha(password){
+    let passwordLength = password.length - 1;
+    if( passwordLength < 8){
+        return false;
+    }
+    else{
+        for(let i = 0; i < passwordLength; i++){
+            if(){
+
+            }
+        }
+    }
+}
+
+validarSenha(senha);
