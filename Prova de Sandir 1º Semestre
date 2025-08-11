@@ -66,20 +66,45 @@ function filtrarMaioresQue(arr, n){
 
 filtrarMaioresQue(array, number);
 
-// Questão 06 incompleta
-const senha = "GarotoDePrograma2_0"
+// Questão 06
+const senha = "FortniteLaBabage2"
 function validarSenha(password){
     let passwordLength = password.length - 1;
+
     if( passwordLength < 8){
-        return false;
+        console.log("Senha com caracteres insuficientes!");
     }
     else{
         for(let i = 0; i < passwordLength; i++){
-            if(){
-
+            // Essa expressão !/[A-Z]/.test() itera pela string e verifica se não há letras maiúsculas
+            if (!/[A-Z]/.test(password)) {
+                return console.log("A senha deve ter uma letra maiúscula");
+            }
+            // Essa expressão !/[a-z]/.test() itera pela string e verifica se não há letras minúsculas
+            if (!/[a-z]/.test(password)) {
+                return console.log("A senha deve ter uma letra minúscula");
+            }
+            // Essa expressão !/\d/.test() itera pela string e verifica se não há números
+            if (!/\d/.test(password)) {
+                return console.log("A senha deve ter um número");
             }
         }
+        console.log("Esta senha é permitida!");
     }
 }
-
 validarSenha(senha);
+
+// Questão 07
+let number = 65;
+function fibonacci(n){
+    let arrayFibonacci = [0, 1];
+    for(let i = 1; i < n; i++){
+        for(let j = 0; j < i; j++){
+            let soma = i + j;
+            arrayFibonacci.push(soma);
+        }
+    }
+    console.log(arrayFibonacci);
+}
+
+fibonacci(number);
