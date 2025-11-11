@@ -1,0 +1,149 @@
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-login{
+    width: 35%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #51615baf;
+    padding: 0px 40px;
+}
+
+.titulo-subtitulo{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+    color: #1A0D02;
+}
+
+.titulo-subtitulo h2{
+    font-size: 32px;
+}
+
+.titulo-subtitulo p{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.lista-input-dados{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+}
+
+.lista-input-dados li{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 600;
+    color: #1A0D02;
+}
+
+.lista-input-dados li label{
+    font-size: 20px;
+}
+
+.lista-input-dados li input{
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    border: solid 3px #1A0D02;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.lista-input-dados li input::placeholder{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1A0D02;
+}
+
+.lista-input-dados li input:focus{
+    outline: none;
+}
+
+/*Essa parte do código retira o fundo padrão do Chrome e coloca a cor que eu quero*/
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 1000px #51615baf inset !important
+}
+
+.container-lembreEesqueci{
+    width: 100%;
+    height: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+}
+
+.container-input-lembre{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+    color: #1A0D02;
+}
+
+#lembre-de-mim{
+    width: 17px;
+    height: 17px;
+    accent-color: #1A0D02;
+}
+
+.container-btns{
+    width: 100%;
+    height: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-btns button, .container-btns a{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.container-btns button:hover, .container-btns a:hover{
+    transform: scale(1.05);
+}
+
+.container-btns button{
+    background-color: #51615B;
+}
+
+.container-btns a{
+    background-color: #2D3230;
+}

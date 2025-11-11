@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Faculdade/Biblioteca Virtual/css/style.css">
+    <link rel="stylesheet" href="/Faculdade/Biblioteca Virtual/css/loginEcadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <section class="container-logo">
+            <a href="index.html">
+                <img src="/Faculdade/Biblioteca Virtual/imgs/logo.png" alt="Logo da bilbioteca" id="img-logo">
+                <h1 class="nome-empresa">Saber Global</h1>
+            </a>
+        </section>
+    </header>
+
+    <main>
+        <form action="../script.js" onsubmit="return validarLogin()" class="form-login">
+            <section class="titulo-subtitulo">
+                <h2>Cadastro</h2>
+            </section>
+
+            <ol class="lista-input-dados">
+                <li>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu email">
+                </li>
+
+                <li>
+                    <label for="data">Data de nascimento</label>
+                    <input type="date" id="data" name="data" required placeholder="Digite seu email">
+                </li>
+
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Digite seu email">
+                </li>
+
+                <li>
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required placeholder="Digite seu email">
+                </li>
+            
+                <section class="container-lembreEesqueci">
+                    <div class="container-input-lembre">
+                        <input type="checkbox" id="lembre-de-mim" name="lembre-de-mim">
+                        <label for="lembre-de-mim">Lembre de mim</label>
+                    </div>
+
+                    <a href="https://accounts.google.com/v3/signin/challenge/pwd?TL=ANzgctTe4S5yf8QBOWai37c3JPTt1x14IJoZX0Hv0dbuJn3hp72MiDa5bh98nNah&authuser=0&cid=2&continue=https%3A%2F%2Fmyaccount.google.com%2Fsigninoptions%2Fpassword&dsh=S286509952%3A1762829365631898&flowName=GlifWebSignIn&hl=pt-BR&ifkv=ARESoU0qYG9ZwSRjDzAUOt0N51xfSASuCE5Ad5_iBGDf4l8EEG8dAoMijsLUXneN0jvSay1F3fs_uA&kdi=CAM&rart=ANgoxcdqJIlmpbSZ2tsg9p_IfN7VJQbP1fAfgRkQfPMcpHFipzpAQdDzplavN8uxTdmw12v8HeE0gaYFnWUaDLsLXTnscYdS0lqb-DyVizHsIAjcN118NDY&rpbg=1&sarp=1&scc=1&service=accountsettings">Esqueci minha senha</a>
+                </section>
+            </ol>
+
+            <section class="container-btns">
+                <button type="submit">Cadastrar</button>
+            </section>
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+    <script src="../script.js"></script>
+</html>
