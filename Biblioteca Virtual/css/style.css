@@ -22,6 +22,7 @@ header{
     background-color: #51615B;
     padding: 10px 30px;
     position: fixed;
+    z-index: 1;
 }
 
 .nav-list{
@@ -99,4 +100,176 @@ header{
 
 #btn-pagina-login:hover, .nav-bar li:hover{
     transform: scale(1.1);
+}
+
+.main-home{
+   width: 100vw;
+   height: auto;
+   padding-top: 8vh;
+}
+
+.background-image{
+    width: 100%;
+    height: 550px;
+    gap: 8vh;
+}
+
+.background-image img{
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 6px #51615B;
+}
+
+#input-search{
+    position: absolute;
+    width: 50vw;
+    height: 7vh;
+    border-radius: 25px;
+    border: none;
+    right: calc(100vw - 75vw);
+    top: 24vh;
+    padding: 15px;
+    font-size: 18px;
+}
+
+#input-search:focus{
+    outline: none;
+}
+
+.container-bemvindos{
+    position: absolute;
+    top: 38vh;
+    width: 60vw;
+    right: calc(100vw - 80vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.container-bemvindos h2{
+    font-size: 2.8rem;
+}
+
+.container-bemvindos p{
+    font-size: 1.3rem;
+}
+
+.container-sobre-saberGlobal{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-sobre-saberGlobal h3, .container-colaboradores h3{
+    font-size: 2.5rem;
+}
+
+.container-cards-explicacao{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 40px;
+}
+
+.container-cards-explicacao div{
+    text-align: center;
+    width: 25rem;
+    height: 30rem;
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #51615B;
+}
+
+.container-cards-explicacao div img{
+    width: 200px;
+    height: 200px;
+}
+
+#card-experiencia h4, #card-comunidade h4, #card-acervo h4{
+    font-size: 26px;
+}
+
+#card-experiencia p, #card-comunidade p, #card-acervo p{
+    font-size: 18px;
+}
+
+.container-colaboradores{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.container-cards-colaboradores{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 40px;
+}
+
+.colaboradores{
+    width: 100%;
+    height: 15rem;
+    border-radius: 20px;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background-color: #51615baf;
+}
+
+.colaboradores img{
+    width: 15rem;
+    height: 100%;
+    border: solid 2px #1A0D02;
+    border-radius: 100%;
+    background-image: url("https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/header.jpg?t=1749053861");
+}
+
+.colaboradores .nome-e-historia{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.colaboradores .nome-e-historia h4{
+    font-size: 30px;
+}
+
+.colaboradores .nome-e-historia p{
+    font-size: 20px;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #51615B;
+    padding: 30px 0px;
+}
+
+.contatos{
+    display: flex;
 }
