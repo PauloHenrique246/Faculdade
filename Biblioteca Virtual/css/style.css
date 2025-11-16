@@ -191,6 +191,11 @@ header{
     justify-content: space-evenly;
     align-items: center;
     background-color: #51615B;
+    transition: 0.5s;
+}
+
+.container-cards-explicacao div:hover,.colaboradores:hover{
+    transform: scale(1.03);
 }
 
 .container-cards-explicacao div img{
@@ -236,6 +241,7 @@ header{
     align-items: center;
     gap: 20px;
     background-color: #51615baf;
+    transition: 0.5s;
 }
 
 .colaboradores img{
@@ -266,10 +272,82 @@ header{
 footer{
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #51615B;
-    padding: 30px 0px;
+    padding: 20px 0px 15px;
+}
+
+.info-footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .contatos{
+    width: 14rem;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contatos h5, .rede-social h5, .sobre-nos h5{
+    font-size: 20px;
+}
+
+.contatos span{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.rede-social{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+.rede-social span{
+    margin-left: 6px;
+}
+
+.rede-social span a{
+    text-decoration: none;
+    color: transparent;
+}
+
+.sobre-nos, .sobre-nos span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.sobre-nos span a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+hr{
+    width: 100%; 
+    height: 4px; 
+    background-color: #ffff;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+#direitos-reservados{
+    font-size: 18px;
+    text-align: center;
 }
