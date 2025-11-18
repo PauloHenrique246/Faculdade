@@ -1,0 +1,28 @@
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 8vh;
+}
+
+.container-input-populares{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#input-search-populares{
+    width: 50vw;
+    height: 7vh;
+    border-radius: 25px;
+    border: none;
+    right: calc(100vw - 75vw);
+    padding: 15px;
+    font-size: 18px;
+}
