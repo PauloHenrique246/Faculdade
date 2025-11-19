@@ -1,0 +1,23 @@
+.container-troca-tema-pagina{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-troca-tema-pagina{
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8vh;
+}
