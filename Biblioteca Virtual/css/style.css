@@ -103,6 +103,10 @@ header{
     transform: scale(1.1);
 }
 
+.menu-mobile{
+    display: none;
+}
+
 .main-home{
    width: 100vw;
    height: auto;
@@ -352,4 +356,111 @@ hr{
 #direitos-reservados{
     font-size: 18px;
     text-align: center;
+}
+
+/*========= RESPONSIVIDADE PARA MOBILE ==========*/
+
+@media (max-width: 500px){
+    header{
+        width: 100vw;
+        height: 9vh;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .container-logo a{
+        justify-content: flex-start;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    #img-logo{
+        width: 20%;
+        height: 20%;
+    }
+
+    .nome-empresa{
+        font-size: 1.2rem;
+    }
+
+    .menu-mobile{
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu-mobile svg{
+        width: 100%;
+        height: 100%;
+    }
+
+    .background-image{
+        height: 250px;
+        gap: 9vh;
+    }
+
+    #input-search{
+        position: absolute;
+        top: 12vh;
+        width: 80vw;
+        height: 6vh;
+        right: calc(100vw - 90vw);
+        font-size: 14px;
+    }
+
+    .container-bemvindos{
+        top: 21vh;
+        width: 80vw;
+        right: calc(100vw - 90vw);
+        gap: 5px;
+    }
+
+    .container-bemvindos h2{
+        font-size: 1.6rem;
+    }
+
+    .container-bemvindos p{
+        font-size: 12px;
+    }
+
+    .container-sobre-saberGlobal{
+        margin-top: 20px;
+    }
+
+    .container-cards-explicacao{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .container-cards-explicacao div{
+        width: 18rem;
+        height: 25rem;
+        border-radius: 22px;
+        padding: 5px;
+    }
+
+    .container-sobre-saberGlobal h3, .container-colaboradores h3{
+        font-size: 1.4rem;
+    }
+
+    #card-experiencia h4, #card-comunidade h4, #card-acervo h4{
+        font-size: 1.3rem;
+    }
+
+    #card-experiencia p, #card-comunidade p, #card-acervo p{
+        font-size: 13px;
+    }
+
+    .container-colaboradores{
+        padding: 10px 5px;
+    }
+
+    .container-cards-colaboradores{
+        padding: 20px;
+    }
 }
