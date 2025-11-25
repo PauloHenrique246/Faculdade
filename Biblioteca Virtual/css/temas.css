@@ -22,7 +22,7 @@ main{
     padding-top: 8vh;
 }
 
-.container-input-populares{
+.container-input-temas{
     width: 100%;
     height: auto;
     display: flex;
@@ -34,7 +34,7 @@ main{
     margin-bottom: 2rem;
 }
 
-#input-search-populares{
+#input-search-temas{
     width: 50vw;
     height: 7vh;
     border-radius: 25px;
@@ -42,9 +42,10 @@ main{
     right: calc(100vw - 75vw);
     padding: 15px;
     font-size: 18px;
+    outline: none;
 }
 
-.container-populares{
+.container-temas{
     width: 90%;
     height: auto;
     display: flex;
@@ -55,14 +56,14 @@ main{
     margin-bottom: 3rem;
 }
 
-.container-populares h3{
+.container-temas h3{
     font-size: 2rem;
     margin-bottom: 2rem;
     text-align: center;
     color: #51615B;
 }
 
-.container-populares-superior, .container-populares-inferior{
+.container-temas-superior, .container-temas-inferior{
     width: 100%;
     height: auto;
     display: flex;
@@ -71,7 +72,7 @@ main{
     align-items: center;
 }
 
-.container-populares-superior button, .container-populares-inferior button{
+.container-temas-superior button, .container-temas-inferior button{
     width: 45px;
     height: 45px;
     display: flex;
@@ -88,7 +89,7 @@ main{
     rotate: 180deg;
 }
 
-.container-populares-superior div, .container-populares-inferior div{
+.container-temas-superior div, .container-temas-inferior div{
     width: 250px;
     height: 350px;
     display: flex;
@@ -101,20 +102,20 @@ main{
     transition: 0.5s;
 }
 
-.container-populares-superior div:hover, .container-populares-inferior div:hover{
+.container-temas-superior div:hover, .container-temas-inferior div:hover{
     transform: scale(1.05);
 }
 
-.container-populares-superior div img, .container-populares-inferior div img{
+.container-temas-superior div img, .container-temas-inferior div img{
     width: 100%;
     height: 60%;
 }
 
-.container-populares-superior div h5, .container-populares-inferior div h5{
+.container-temas-superior div h5, .container-temas-inferior div h5{
     font-size: 1.3rem;
 } 
 
-.container-populares hr{
+.container-temas hr{
     width: 97%;
     height: 7px;
     background-color: #51615B;

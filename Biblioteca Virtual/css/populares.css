@@ -42,6 +42,7 @@ main{
     right: calc(100vw - 75vw);
     padding: 15px;
     font-size: 18px;
+    outline: none;
 }
 
 .container-populares{
