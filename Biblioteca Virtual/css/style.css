@@ -462,5 +462,23 @@ hr{
 
     .container-cards-colaboradores{
         padding: 20px;
+        height: ;
+    }
+
+    .colaboradores{
+        flex-direction: column;
+    }
+
+    .colaboradores img{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .colaboradores .nome-e-historia h4{
+        font-size: 16px;
+    }
+
+    .colaboradores .nome-e-historia p{
+        font-size: 12px;
     }
 }
