@@ -1,3 +1,18 @@
+.container-troca-tema-pagina{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-troca-tema-pagina{
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 main{
     width: 100vw;
     height: 100vh;
@@ -162,6 +177,10 @@ input:-webkit-autofill:active{
 }
 
 @media (max-width: 500px){
+    .container-troca-tema-pagina{
+        display: none;
+    }
+
     .form-login, .form-cadastro{
         width: 90%;
         padding: 20px;

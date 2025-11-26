@@ -15,7 +15,7 @@
 
 main{
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -38,6 +38,67 @@ h3{
 .chat-forum{
     width: 100%;
     height: 28rem;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     background-color: #51615baf;
+}
+
+.container-forum input{
+    height: 3.5rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.container-forum input:focus{
+    outline: none;
+}
+
+.container-ranking{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.container-ranking span{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: auto;
+    height: auto;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container-ranking span div{
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    border: solid 2px #51615baf;
+}
+
+.btn-enviar-mensagem{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+    top: 68.8vh;
+    right: 9vw;
+    cursor: pointer;
+}
+
+.btn-enviar-mensagem svg{
+    transform: rotate(180deg);
+}
+
+h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }

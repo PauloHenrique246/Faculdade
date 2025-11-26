@@ -397,7 +397,7 @@ hr{
 
     .menu-mobile{
         display: block;
-        width: 40px;
+        width: 35px;
         height: 40px;
     }
 
@@ -413,7 +413,7 @@ hr{
 
     #input-search{
         position: absolute;
-        top: 12vh;
+        top: 14.5vh;
         width: 80vw;
         height: 6vh;
         right: calc(100vw - 90vw);
@@ -421,9 +421,9 @@ hr{
     }
 
     .container-bemvindos{
-        top: 21vh;
-        width: 80vw;
-        right: calc(100vw - 90vw);
+        top: 24vh;
+        width: 90vw;
+        right: calc(100vw - 95vw);
         gap: 5px;
     }
 
