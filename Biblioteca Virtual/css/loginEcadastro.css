@@ -160,3 +160,64 @@ input:-webkit-autofill:active{
     text-decoration: none;
     color: #ffff;
 }
+
+@media (max-width: 500px){
+    .form-login, .form-cadastro{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .titulo-subtitulo h2{
+        font-size: 24px;
+    }
+
+    .titulo-subtitulo p{
+        font-size: 18px;
+    }
+
+    .lista-input-dados{
+        gap: 15px;
+    }
+
+    .lista-input-dados li{
+        gap: 10px;
+    }
+
+    .lista-input-dados li label{
+        font-size: 16px;
+    }
+
+    .lista-input-dados li input{
+        height: 40px;
+    }
+
+    .lista-input-dados li input::placeholder{
+        font-size: 12px;
+    }
+
+    .container-lembreEesqueci{
+        font-size: 14px;
+    }
+
+    .container-btns button{
+        font-size: 15px;
+        height: 38px;
+    }
+
+    .container-cadastro{
+        font-size: 14px;
+    }
+
+    .container-btns a svg{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        z-index: 1;
+        top: 11px;
+        right: 10px;
+    }
+
+    .container-btns a p{
+        display: none;
+    }
+}
