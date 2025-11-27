@@ -85,13 +85,21 @@ h3{
 
 .btn-enviar-mensagem{
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
     border: none;
-    top: 68.8vh;
-    right: 9vw;
+    top: 75.5vh;
+    right: 9.2vw;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-enviar-mensagem:hover{
+    background-color: #343b39af;
 }
 
 .btn-enviar-mensagem svg{
@@ -101,4 +109,26 @@ h3{
 h3{
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+@media (max-width: 500px){
+    h3{
+        font-size: 24px;
+    }
+
+    .container-forum{
+        width: 90%;
+    }
+
+    .btn-enviar-mensagem{
+        top: 84.5vh;
+        right: 6vw;
+    }
+
+    .container-ranking{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
 }
