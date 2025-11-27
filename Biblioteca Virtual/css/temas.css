@@ -19,7 +19,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 8vh;
+    padding-top: 8vh;overflow-x: hidden;
 }
 
 .container-input-temas{
@@ -120,4 +120,58 @@ main{
     height: 7px;
     background-color: #51615B;
     border: none;
+}
+@media (max-width: 500px){
+    .container-troca-tema-pagina{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: block;
+    }
+
+    .container-input-temas svg{
+        width: 28px;
+        height: 28px;
+    }
+
+    #input-search-temas{
+        width: 80vw;
+        height: 7vh;
+        border-radius: 25px;
+        right: calc(100vw - 90vw);
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .container-temas h3{
+        font-size: 1.4rem;
+    }
+
+    .container-temas-superior, .container-temas-inferior{
+        width: auto;
+        overflow-x: hidden;
+        gap: 10px;
+        margin-left: 75rem;
+    }
+
+    .container-temas-superior div, .container-temas-inferior div{
+        width: 250px;
+        padding: 10px;
+        margin-right: 7rem;
+    }
+
+    .container-temas-superior button, .container-temas-inferior button{
+        width: 35px;
+        height: 35px;
+    }
+
+    #btn-prox-mobile-tema, #btn-prox-mobile-tema2{
+        position: absolute;
+        right: 1rem;
+    }
+
+    hr{
+      margin-left: 1rem;  
+    }
 }

@@ -1,12 +1,15 @@
-let emailUsuario = document.getElementById('email');
-let senhaUsuario = document.getElementById('senha');
+function validarLogin() {
+    pagina = "populares.html";
+    let emailUsuario = document.getElementById('email').value;
+    let senhaUsuario = document.getElementById('senha').value;
 
-async function validarLogin() {
-    if(emailUsuario == "admin123@gmail.com" && senhaUsuario == "Juliana me da um 10"){
-        return true;
+    if(emailUsuario == "admin@gmail.com" && senhaUsuario == "123"){
+        alert("Você está logado como administrador (A página do administrador tem que ser cirada ainda)");
+        window.location.href = pagina;
     }
 
     else{
-        return false;
+        alert("Bem vindo(a)!");
+        window.location.href = pagina;
     }
 }

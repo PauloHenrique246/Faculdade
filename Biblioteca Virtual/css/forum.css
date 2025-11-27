@@ -21,10 +21,13 @@ main{
     justify-content: space-evenly;
     align-items: center;
     padding-top: 8vh;
+    overflow-x: hidden;
 }
 
 h3{
     font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .container-forum{
@@ -56,6 +59,26 @@ h3{
     outline: none;
 }
 
+.btn-enviar-mensagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+    top: 68.8vh;
+    right: 9vw;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn-enviar-mensagem svg{
+    transform: rotate(180deg);
+}
+
 .container-ranking{
     width: 100%;
     height: auto;
@@ -83,22 +106,39 @@ h3{
     border: solid 2px #51615baf;
 }
 
-.btn-enviar-mensagem{
-    position: absolute;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    border: none;
-    top: 68.8vh;
-    right: 9vw;
-    cursor: pointer;
-}
+@media (max-width: 500px){
+    .container-troca-tema-pagina{
+        display: none;
+    }
 
-.btn-enviar-mensagem svg{
-    transform: rotate(180deg);
-}
+    .menu-mobile{
+        display: block;
+    }
 
-h3{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    h3{
+        font-size: 1.4rem;
+    }
+
+    .container-forum{
+        width: 90%;
+    }
+
+    .container-forum input{
+        font-size: 14px;
+    }
+
+    .btn-enviar-mensagem{
+        top: 84.5vh;
+        right: 6vw;
+    }
+
+    .container-ranking{
+        flex-direction: column; 
+        align-items: center;
+        gap: 40px;
+    }
+
+    .container-ranking span{
+        font-size: 1.2rem;
+    }
 }
