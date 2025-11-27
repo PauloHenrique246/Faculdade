@@ -19,7 +19,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 8vh;
+    padding-top: 8vh;overflow-x: hidden;
 }
 
 .container-input-populares{
@@ -109,6 +109,7 @@ main{
 .container-populares-superior div img, .container-populares-inferior div img{
     width: 100%;
     height: 60%;
+    border-radius: 15px;
 }
 
 .container-populares-superior div h5, .container-populares-inferior div h5{
@@ -120,4 +121,59 @@ main{
     height: 7px;
     background-color: #51615B;
     border: none;
+}
+
+@media (max-width: 500px){
+    .container-troca-tema-pagina{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: block;
+    }
+
+    .container-input-populares svg{
+        width: 28px;
+        height: 28px;
+    }
+
+    #input-search-populares{
+        width: 80vw;
+        height: 7vh;
+        border-radius: 25px;
+        right: calc(100vw - 90vw);
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .container-populares h3{
+        font-size: 1.4rem;
+    }
+
+    .container-populares-superior, .container-populares-inferior{
+        width: auto;
+        overflow-x: hidden;
+        gap: 10px;
+        margin-left: 75rem;
+    }
+
+    .container-populares-superior div, .container-populares-inferior div{
+        width: 250px;
+        padding: 10px;
+        margin-right: 7rem;
+    }
+
+    .container-populares-superior button, .container-populares-inferior button{
+        width: 35px;
+        height: 35px;
+    }
+
+    #btn-prox-mobile, #btn-prox-mobile2{
+        position: absolute;
+        right: 1rem;
+    }
+
+    hr{
+      margin-left: 1rem;  
+    }
 }
